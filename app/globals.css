@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf7f1;
+  --foreground: #171513;
+  --accent: #d8722b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), var(--font-pretendard), Inter, Pretendard,
+    "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), var(--font-pretendard), Inter, Pretendard,
+    "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fffaf3;
+}
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.28em;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+}
+
+.section-label {
+  color: rgb(23 21 19 / 52%);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.profile-placeholder {
+  position: relative;
+}
+
+.profile-placeholder::before,
+.profile-placeholder::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgb(23 21 19 / 18%);
+}
+
+.profile-placeholder::before {
+  top: 21%;
+  width: 38%;
+  aspect-ratio: 1;
+  border-radius: 999px;
+}
+
+.profile-placeholder::after {
+  bottom: 19%;
+  width: 56%;
+  height: 27%;
+  border-radius: 999px 999px 0 0;
+  border-bottom: 0;
+}
+
+.contact-link {
+  display: block;
+  width: fit-content;
+  color: #171513;
+  text-decoration-line: underline;
+  transition: color 160ms ease;
+}
+
+.contact-link:hover {
+  color: var(--accent);
+}
+
+@media (min-width: 768px) {
+  .section-grid {
+    grid-template-columns: 12rem minmax(0, 1fr);
+  }
+}
