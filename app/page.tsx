@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: "브랜드 리뉴얼 시스템",
+    title: " 올 브랜드 리뉴얼 시스템",
     type: "Identity / Web",
     year: "2026",
     summary:
