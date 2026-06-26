@@ -63,9 +63,7 @@ export default function Home() {
                 Selected Works
               </p>
               <h1 className="max-w-4xl text-[clamp(3.2rem,10vw,9rem)] font-normal leading-[0.95] tracking-normal">
-                이름을
-                <br />
-                넣어주세요
+                이규하
               </h1>
             </div>
           </div>
