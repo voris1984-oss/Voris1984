@@ -10,7 +10,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "차분한 모노톤의 개인 포트폴리오 랜딩페이지",
+  description: "모노톤의 개인 포트폴리오 랜딩페이지",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
